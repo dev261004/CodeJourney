@@ -1,0 +1,51 @@
+.table-container {
+    width: 95%;
+    margin: 20px auto;
+    overflow-x: auto; /* Enable horizontal scrolling on smaller screens */
+  }
+  
+  .problem-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+      white-space: nowrap; /* Prevent content from wrapping */
+  }
+  
+  .problem-table th,
+  .problem-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .problem-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+  
+  .problem-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .problem-table tbody tr:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .link {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .link:hover {
+      text-decoration: underline;
+    color: #0056b3;
+  }
+  .checkbox {
+      margin-right: 8px;
+  }
+  .check-icon{
+      color: green;
+    margin-left: 10px;
+  }
