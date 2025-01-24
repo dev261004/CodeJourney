@@ -1,8 +1,12 @@
+import os
 from leetscrape import GetQuestionsList, GetQuestion
 from pymongo import MongoClient
+from dotenv import load_dotenv, dotenv_values 
+
+load_dotenv() 
 
 # Connect to MongoDB
-client = MongoClient("mongodb+srv://devagrawal:dev261004agrawal@codejourney0.qzrrx.mongodb.net/")  # Update with your MongoDB connection string
+client = MongoClient(os.getenv(MONGODB_URL))  # Update with your MongoDB connection string
 db = client["codejourney"]  # Database name
 questions_collection = db["questions"]  # Collection for questions
 companies_collection = db["companies"]  # Collection for companies
