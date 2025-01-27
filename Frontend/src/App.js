@@ -6,11 +6,11 @@ import ProblemTable from './components/ProblemTable/ProblemTable.jsx' // Assumin
 function App() {
   return (
     <Router>
-      <Router>
+      <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/problems" element={<ProblemTable />} />
         {/* Other routes here */}
-      </Router>
+      </Routes>
     </Router>
   );
 }

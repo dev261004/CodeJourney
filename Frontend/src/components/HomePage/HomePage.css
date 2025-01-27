@@ -7,6 +7,9 @@ body, h1, h2, h3, p, ul, li {
 .homepage {
     font-family: 'Arial', sans-serif;
     color: #333;
+    min-height: 100vh; /* Ensure the page covers at least full viewport height */
+    display: flex;
+    flex-direction: column; /* Layout items vertically */
 }
 
 /* Navbar */
@@ -69,7 +72,7 @@ body, h1, h2, h3, p, ul, li {
 
 /* Hero Section */
 .hero {
-    background-image: linear-gradient(to right, #333, #666); /* Add a gradient background */
+    background-image: linear-gradient(to right, #333, #666);
     color: white;
     text-align: center;
     padding: 4rem 0;
@@ -140,11 +143,34 @@ body, h1, h2, h3, p, ul, li {
     color: white;
     text-align: center;
     padding: 1rem 0;
-    position: fixed; /* Stick to the bottom */
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    margin-top: auto; /* Push the footer to the bottom */
 }
+.footer-logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.footer-logos a{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+    color: white; /* Logo text color */
+    margin: 0 15px;
+
+}
+.footer-logo {
+    width: 30px;
+    height: auto;
+    margin-right: 5px; /* Space between logo and text */
+    vertical-align: middle; /* Align logo with text vertically */
+}
+.website-name{
+    color: white;
+    font-weight: bold;
+    vertical-align: middle; /* Align logo with text vertically */
+}
+
 .problems-list{
     padding: 3rem;
 }
